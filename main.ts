@@ -11,8 +11,8 @@ const app = new Hono();
 const apis: Record<string, API> = {}
 app.get("/heathz", (c: any) => c.text("OK"));
 
-app.get("/api/update/:key", (c: any) => {
-  const apiKey = c.req.param("key")
+app.get("/api/update/:apikey", (c: any) => {
+  const apiKey = c.req.param("apikey")
   apis[apiKey] = c.req.body
 });
 
