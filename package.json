@@ -1,0 +1,17 @@
+{
+  "name": "testzong",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "sync": "bun sync.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "croner": "^8.0.1"
+  }
+}
